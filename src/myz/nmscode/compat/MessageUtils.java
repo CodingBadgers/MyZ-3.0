@@ -4,8 +4,7 @@
 package myz.nmscode.compat;
 
 import myz.MyZ;
-import myz.nmscode.v1_7_R1.messages.Hologram;
-
+import myz.nmscode.v1_7_R3.messages.Hologram;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 
@@ -21,7 +20,7 @@ public class MessageUtils {
 			Hologram.removeAll();
 			break;
 		case v1_7_5:
-			myz.nmscode.v1_7_R2.messages.Hologram.removeAll();
+			myz.nmscode.v1_7_R3.messages.Hologram.removeAll();
 			break;
 		}
 	}
@@ -35,7 +34,7 @@ public class MessageUtils {
 			hologram.follow();
 			break;
 		case v1_7_5:
-			myz.nmscode.v1_7_R2.messages.Hologram holo = new myz.nmscode.v1_7_R2.messages.Hologram(message);
+			myz.nmscode.v1_7_R3.messages.Hologram holo = new myz.nmscode.v1_7_R3.messages.Hologram(message);
 			holo.setFollow(player);
 			holo.show(location, array);
 			holo.follow();
@@ -50,7 +49,7 @@ public class MessageUtils {
 			hologram.show(location, playerFor);
 			break;
 		case v1_7_5:
-			myz.nmscode.v1_7_R2.messages.Hologram holo = new myz.nmscode.v1_7_R2.messages.Hologram(msg);
+			myz.nmscode.v1_7_R3.messages.Hologram holo = new myz.nmscode.v1_7_R3.messages.Hologram(msg);
 			holo.show(location, playerFor);
 			break;
 		}
@@ -61,7 +60,7 @@ public class MessageUtils {
 		case v1_7_2:
 			return Hologram.distance;
 		case v1_7_5:
-			return myz.nmscode.v1_7_R2.messages.Hologram.distance;
+			return myz.nmscode.v1_7_R3.messages.Hologram.distance;
 		}
 		return 0;
 	}

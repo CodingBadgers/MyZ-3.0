@@ -4,10 +4,9 @@
 package myz.support.interfacing;
 
 import myz.MyZ;
-import myz.nmscode.v1_7_R1.messages.FancyMessage;
+import myz.nmscode.v1_7_R3.messages.FancyMessage;
 import myz.support.PlayerData;
 import myz.utilities.VaultUtils;
-
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.World;

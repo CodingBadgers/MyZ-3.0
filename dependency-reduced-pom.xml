@@ -30,7 +30,6 @@
         <version>2.3.1</version>
         <configuration>
           <finalName>MyZ-3</finalName>
-          <outputDirectory>D:\Users\Jordan\Minecraft\Server\plugins</outputDirectory>
         </configuration>
       </plugin>
       <plugin>
@@ -97,19 +96,13 @@
     <dependency>
       <groupId>org.bukkit</groupId>
       <artifactId>bukkit</artifactId>
-      <version>LATEST</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.bukkit</groupId>
-      <artifactId>craftbukkit</artifactId>
-      <version>1.7.2-R0.1</version>
+      <version>1.7.9-R0.1-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>public.org.bukkit</groupId>
       <artifactId>craftbukkit</artifactId>
-      <version>1.7.5-R0.1-SNAPSHOT</version>
+      <version>1.7.9-R0.1-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>
     <dependency>

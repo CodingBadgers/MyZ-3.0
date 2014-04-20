@@ -4,8 +4,7 @@
 package myz.nmscode.compat;
 
 import myz.MyZ;
-import myz.nmscode.v1_7_R1.utilities.NMSCodeUtils;
-
+import myz.nmscode.v1_7_R3.utilities.NMSCodeUtils;
 import org.bukkit.entity.Player;
 
 /**
@@ -20,7 +19,7 @@ public class UtilUtils {
 			NMSCodeUtils.revive(player);
 			break;
 		case v1_7_5:
-			myz.nmscode.v1_7_R2.utilities.NMSCodeUtils.revive(player);
+			myz.nmscode.v1_7_R3.utilities.NMSCodeUtils.revive(player);
 			break;
 		}
 	}

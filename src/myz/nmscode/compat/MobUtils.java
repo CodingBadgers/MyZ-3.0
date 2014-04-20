@@ -5,13 +5,11 @@ package myz.nmscode.compat;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import myz.MyZ;
-import myz.nmscode.v1_7_R1.mobs.CustomEntityPlayer;
-import myz.nmscode.v1_7_R1.mobs.CustomEntityType;
-import myz.nmscode.v1_7_R1.mobs.CustomEntityZombie;
-import myz.nmscode.v1_7_R1.utilities.EntityCreator;
-
+import myz.nmscode.v1_7_R3.mobs.CustomEntityPlayer;
+import myz.nmscode.v1_7_R3.mobs.CustomEntityType;
+import myz.nmscode.v1_7_R3.mobs.CustomEntityZombie;
+import myz.nmscode.v1_7_R3.utilities.EntityCreator;
 import org.bukkit.Location;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.LivingEntity;
@@ -63,7 +61,7 @@ public class MobUtils {
 			CustomEntityType.unregisterEntities();
 			break;
 		case v1_7_5:
-			myz.nmscode.v1_7_R2.mobs.CustomEntityType.unregisterEntities();
+			myz.nmscode.v1_7_R3.mobs.CustomEntityType.unregisterEntities();
 			break;
 		}
 	}
@@ -74,7 +72,7 @@ public class MobUtils {
 			CustomEntityType.registerEntities();
 			break;
 		case v1_7_5:
-			myz.nmscode.v1_7_R2.mobs.CustomEntityType.registerEntities();
+			myz.nmscode.v1_7_R3.mobs.CustomEntityType.registerEntities();
 			break;
 		}
 	}
@@ -93,7 +91,7 @@ public class MobUtils {
 			EntityCreator.create(location, type, reason, a, b);
 			break;
 		case v1_7_5:
-			myz.nmscode.v1_7_R2.utilities.EntityCreator.create(location, type, reason, a, b);
+			myz.nmscode.v1_7_R3.utilities.EntityCreator.create(location, type, reason, a, b);
 			break;
 		}
 	}
@@ -104,7 +102,7 @@ public class MobUtils {
 			EntityCreator.overrideVillager(entity);
 			break;
 		case v1_7_5:
-			myz.nmscode.v1_7_R2.utilities.EntityCreator.overrideVillager(entity);
+			myz.nmscode.v1_7_R3.utilities.EntityCreator.overrideVillager(entity);
 			break;
 		}
 	}
@@ -115,7 +113,7 @@ public class MobUtils {
 			EntityCreator.disguiseNPC(location);
 			break;
 		case v1_7_5:
-			myz.nmscode.v1_7_R2.utilities.EntityCreator.disguiseNPC(location);
+			myz.nmscode.v1_7_R3.utilities.EntityCreator.disguiseNPC(location);
 			break;
 		}
 	}
@@ -125,7 +123,7 @@ public class MobUtils {
 		case v1_7_2:
 			return CustomEntityPlayer.newInstance(playerDuplicate);
 		case v1_7_5:
-			return myz.nmscode.v1_7_R2.mobs.CustomEntityPlayer.newInstance(playerDuplicate);
+			return myz.nmscode.v1_7_R3.mobs.CustomEntityPlayer.newInstance(playerDuplicate);
 		}
 		return null;
 	}
@@ -135,7 +133,7 @@ public class MobUtils {
 		case v1_7_2:
 			return CustomEntityZombie.newInstance(player);
 		case v1_7_5:
-			return myz.nmscode.v1_7_R2.mobs.CustomEntityZombie.newInstance(player);
+			return myz.nmscode.v1_7_R3.mobs.CustomEntityZombie.newInstance(player);
 		}
 		return null;
 	}

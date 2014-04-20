@@ -4,8 +4,7 @@
 package myz.nmscode.compat;
 
 import myz.MyZ;
-import myz.nmscode.v1_7_R1.pathfinders.Support;
-
+import myz.nmscode.v1_7_R3.pathfinders.Support;
 import org.bukkit.Location;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
@@ -22,7 +21,7 @@ public class PathUtils {
 			Support.elevatePlayer(player, priority);
 			break;
 		case v1_7_5:
-			myz.nmscode.v1_7_R2.pathfinders.Support.elevatePlayer(player, priority);
+			myz.nmscode.v1_7_R3.pathfinders.Support.elevatePlayer(player, priority);
 			break;
 		}
 	}
@@ -33,7 +32,7 @@ public class PathUtils {
 			Support.see(entity, location, priority);
 			break;
 		case v1_7_5:
-			myz.nmscode.v1_7_R2.pathfinders.Support.see(entity, location, priority);
+			myz.nmscode.v1_7_R3.pathfinders.Support.see(entity, location, priority);
 			break;
 		}
 	}
@@ -43,7 +42,7 @@ public class PathUtils {
 		case v1_7_2:
 			return (float) Support.experienceBarVisibility(player) / 18;
 		case v1_7_5:
-			return (float) myz.nmscode.v1_7_R2.pathfinders.Support.experienceBarVisibility(player) / 18;
+			return (float) myz.nmscode.v1_7_R3.pathfinders.Support.experienceBarVisibility(player) / 18;
 		}
 		return 0.0f;
 	}
